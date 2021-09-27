@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pipex.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/27 10:29:53 by jbuan             #+#    #+#             */
+/*   Updated: 2021/09/27 10:30:10 by jbuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pipex.h"
 
 int	pipex(int argc, char *argv[])
 {
-	struct s_list s;
+	struct s_list	s;
 
 	malloc_files(argc, argv, &s.stock1, &s.stock2);
 	copy_file1_to_stock1(argc, argv, s.stock1);

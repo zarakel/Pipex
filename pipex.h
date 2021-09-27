@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pipex.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/27 10:39:58 by jbuan             #+#    #+#             */
+/*   Updated: 2021/09/27 10:44:49 by jbuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PIPEX_H
 # define PIPEX_H
 # include <unistd.h>
@@ -9,7 +21,7 @@
 # include <string.h>
 # include <stdlib.h>
 
-typedef struct s_list s;
+typedef struct s	t_list;
 
 struct s_list
 {
@@ -38,9 +50,9 @@ char	*copy_file1_to_stock1(int argc, char *argv[], char *stock1);
 char	*copy_file2_to_stock2(int argc, char *argv[], char *stock2);
 char	*copies(int argc, char *argv[], char **stock);
 char	*modify_copy(int i, char *modif, char **stock);
-char	*malloc_files(int argc, char *argv[],char **stock1, char **stock2);
-char	**malloc_tab(int argc, char* argv[], char ***stock);
-char	*malloc_strings(int argc, char* argv[], char **stock);
+char	*malloc_files(int argc, char *argv[], char **stock1, char **stock2);
+char	**malloc_tab(int argc, char *argv[], char ***stock);
+char	*malloc_strings(int argc, char *argv[], char **stock);
 char	*malloc_modify_copy(int i, char **path, char **modif, char *stock[]);
 int		ft_strcmp(char *s1, char *s2);
 int		ft_strlen(char *s);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   copies.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/27 10:08:54 by jbuan             #+#    #+#             */
+/*   Updated: 2021/09/27 10:08:56 by jbuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pipex.h"
 
 char	*copy_file1_to_stock1(int argc, char *argv[], char *stock1)
@@ -5,11 +17,11 @@ char	*copy_file1_to_stock1(int argc, char *argv[], char *stock1)
 	int	i;
 
 	i = 0;
-	while(argv[(argc - argc) + 1][i])
+	while (argv[(argc - argc) + 1][i])
 	{
 		stock1[i] = argv[1][i];
 		i++;
-	} 
+	}
 	stock1[i] = '\0';
 	return (0);
 }
@@ -19,7 +31,7 @@ char	*copy_file2_to_stock2(int argc, char *argv[], char	*stock2)
 	int	i;
 
 	i = 0;
-	while(argv[argc - 1][i])
+	while (argv[argc - 1][i])
 	{
 		stock2[i] = argv[argc - 1][i];
 		i++;
@@ -49,7 +61,7 @@ char	*copies(int i, char *argv[], char **stock)
 		j++;
 		k++;
 	}
-	stock[l + 1] =  NULL;
+	stock[l + 1] = NULL;
 	return (0);
 }
 
@@ -58,7 +70,7 @@ char	*modify_copy(int i, char *modif, char *stock[])
 	int		j;
 	int		k;
 	char	*path;
-	
+
 	malloc_modify_copy(i, &path, &modif, stock);
 	k = 0;
 	j = 0;
